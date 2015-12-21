@@ -6,7 +6,7 @@
 //
 //
 
-#import "ISHTTPOperationQueue.h"
+#import <ISHTTPOperation/ISHTTPOperationQueue.h>
 
 @interface IRHTTPOperationQueue : ISHTTPOperationQueue
 
