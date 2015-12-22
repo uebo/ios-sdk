@@ -24,7 +24,8 @@ NSString * IRLocalizedString(NSString *key, NSString *comment) {
 }
 
 + (NSBundle *)resources {
-    NSBundle *main      = [NSBundle mainBundle];
+    //http://cocoadays.blogspot.jp/2015/06/cocoapods-useframeworks.html
+    NSBundle *main      = [NSBundle bundleForClass:[self class]];
     NSBundle *resources = [NSBundle bundleWithPath: [main pathForResource: @"IRKit"
                                                                    ofType: @"bundle"]];
 
